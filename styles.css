@@ -19,13 +19,22 @@ html{
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    margin-left: 320px;
     height:60px ;
     background-color: var(--color-1);
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 100;
 }
 
+.l{
+    height: 20px;
+}
 .links-container {
     height: 100%;
     width: 100%;
@@ -61,25 +70,26 @@ nav .home-link {
 
 /* main section codes started */
 
-section img{
-    width: 350px;
-    height: 280px;
+section img {
+    width: 380px;
+    height: 300px;
     margin-top:-20px;
     margin-left: 45px;
     margin-right: auto;
 }
+
 section p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #f0f0f0;
-    margin-top: 0px;
+    margin-top: 90px;
     margin-left: 20px;
 }
 
 section h1 {
     margin-left: 17px;
     margin-top: 5px;
-    font-size:  1.6rem;
+    font-size:  1.9rem;
     font-weight: 800;
     color: transparent;
     -webkit-text-stroke: .5px #006aff;
@@ -100,10 +110,11 @@ section h1 {
 }
 
 section h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #f0f0f0;
     font-weight: bold;
     margin-left: 15px;
+    margin-top: 15px;
 }
 
 section h3 span {
@@ -113,7 +124,7 @@ section h3 span {
 h4 {
     color: #f0f0f0;
     font-size: 0.8rem;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 15px;
 }
 
@@ -126,6 +137,7 @@ section a {
     color: #0f1016;
     margin-left: 155px;
     margin-bottom: 30px;
+    margin-top: 35px;
 }
 
 section a:hover {
@@ -144,7 +156,8 @@ section a:hover {
 
 .links{
     margin-left: 136px;
-    margin-top: 30px;
+    margin-top: 32px;
+    margin-bottom: 70px;
 }
 
 .links a:hover {
@@ -186,8 +199,8 @@ section a:hover {
 
 .team {
     width: 100%;
-    height: 95vh;
-    padding: 200px 0;
+    height: auto;
+    padding: 200px 0 10px 0;
 }
 
 .team h1 {
@@ -300,6 +313,42 @@ section a:hover {
     margin-top: 12px
 }
 
+.contact {
+    color: white;
+    text-align:justify;
+    line-height: 1.5;
+    margin: 15px;
+    padding: 20px;
+    height: auto;
+    background: linear-gradient(to right, #006aff, #0a0909);
+    border-radius: 10px;
+}
+
+
+.contact{
+    text-align: center;
+    font-weight: 500;
+}
+input {
+    padding: 9px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea{
+    border-radius: 5px;
+}
+
+#ol {
+    padding: 6px;
+    width: 90px;
+    color: #f0f0f0;
+    background-color: #006aff;
+    box-shadow: 0 0 10px white;
+}
 
 
 
@@ -331,7 +380,7 @@ section a:hover {
 
 
 /* code responsive mobile version header */
-@media(max-width:450px){
+@media(max-width:500px){
 .links-container{
     flex-direction: column;
     align-items: flex-start;
