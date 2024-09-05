@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="l"></div>
+    <nav>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" color="#03A9F4" fill="none">
+                <path d="M4 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 19L20 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </label>
+        <label id="overlay" for="sidebar-active"></label>
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" color="#03A9F4" fill="none">
+                    <path d="M18 6L12 12M12 12L6 18M12 12L18 18M12 12L6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </label>
+
+            <a class="home-link" href="#">Home</a>
+            <a href="#About">About</a>
+            <a href="#Project">Project</a>
+            <a href="#Contact">Contact</a>
+        </div>
+    </nav>
+</header>
+<main>
+    <section>
+        <p>Hey there! This is me,</p>
+        <h1>Nelofar developer</h1>
+        <img src="images/3-removebg-preview.png" alt="" >
+        <h3>Jonior Web Developer |<span>I try to best<br> it's my portfolio</span></h3>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Vitae, odio.</h4> <br>
+        <a href="#">Download CV</a>
+        </section>
+        <div class="links">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-whatsapp'></i></a>
+            <a href="#"><i class='bx bxl-telegram'></i></a>
+        </div>
+        <div class="section-2" id="About">
+            <div class="img">
+                <img src="images/12121212.png" alt="">
+            </div>
+            <div class="about-section">
+                <h2>About Me</h2>
+            <p> veritatis consequuntur magni recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi autem doloribus culpa blanditiis saepe aliquid dolore aspernatur quisquam ipsam nobis, possimus natus eveniet magnam reiciendis praesentium harum dolores consequatur facilis earum numquam est enim omnis porro aut. Numquam, eaque odio!</p>
+            <label for="office" id="off">Office-Pakage</label>
+            <input
+            type="range"
+            class="accent"
+            name="Office Pakage"
+            id="office"
+            min="0"
+            max="1.1"
+            />
+            <label for="html">HTML</label>
+            <input
+            type="range"
+            class="accent"
+            name="HTML"
+            id="html"
+            min="0"
+            max="1.2"
+            />
+            <label for="css">CSS</label>
+            <input type="range" class="accent" name="CSS" min="0" max="3" />
+        </div>
+</div>
+<div class="project" id="Project">
+    <h2>My project </h2>
+    <div class="div">
+    <div class="img1">
+    <a href="#"> <img src="images/iiiii.png" alt=""></a>
+    <a href="#"></a> <img src="images/rr.png" alt=""></a>
+    </div>
+    <div class="img2">
+    <a href="#"><img src="images/pppppp.png" alt=""></a>
+    <a href="#"><img src="images/product.png" alt=""></a>
+    </div>
+</div>
+</div>
+</main>
+<footer>
+    <div class="contact" id="Contact">
+        <h2>Contact Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum unde explicabo nam consequatur soluta! Atque, corrupti! Nam alias provident.</p>
+        <br>
+        <input type="text" placeholder="Full name">
+        <br>
+        <input type="text" placeholder="Email adress">
+        <br>
+        <textarea name="" id="" cols="30" rows="5" placeholder=" Write your massage in here!"></textarea><br><br>
+        <input type="submit" id="ol">
+    </div>
+</footer>
+</body>
+</html>
